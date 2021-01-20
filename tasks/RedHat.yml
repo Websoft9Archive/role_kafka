@@ -1,0 +1,2 @@
+- debug:
+    msg: Kafka will be installed on {{ ansible_distribution }} 

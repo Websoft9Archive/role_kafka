@@ -1,7 +1,5 @@
 # CHANGELOG
 
-## 2020-02-14 Release 5.0.1-1
-
-* add([#33][i33])
-* fix
-
+## Release v2.7.0-1  2021-01-20
+### Fixes and Enhancements
+- 2.5.0 to 2.7.0 #1
