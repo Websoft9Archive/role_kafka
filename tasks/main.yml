@@ -35,6 +35,13 @@
     owner: kafka 
     group: kafka
 
+- name: Insert ngnix service password authority segment
+  blockinfile:
+    path: /data/kafka/bin/kafka-run-class.sh
+    insertafter: "#!/bin/bash"
+    block: |
+      JMX_PORT={{kafka_jmx_port}}
+
 - name: Configuration Zookeeper Server
   copy:
     src: zookeeper.service
