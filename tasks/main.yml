@@ -41,6 +41,7 @@
     insertafter: "#!/bin/bash"
     block: |
       JMX_PORT={{kafka_jmx_port}}
+  when: kafka_jmx
 
 - name: Configuration Zookeeper Server
   copy:
