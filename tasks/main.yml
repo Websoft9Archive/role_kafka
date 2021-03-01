@@ -35,9 +35,9 @@
     owner: kafka 
     group: kafka
 
-- name: Insert ngnix service password authority segment
+- name: Add JMX for kafka
   blockinfile:
-    path: /data/kafka/bin/kafka-run-class.sh
+    path: /opt/kafka/bin/kafka-run-class.sh
     insertafter: "#!/bin/bash"
     block: |
       JMX_PORT={{kafka_jmx_port}}
