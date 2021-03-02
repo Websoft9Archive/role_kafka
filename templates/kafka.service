@@ -3,6 +3,7 @@ Description=Kafka
 After=zookeeper.service
 [Service]
 type=simple
+Environment=JMX_PORT={{kafka_jmx_port}}
 ExecStart=/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
 ExecStop=/opt/kafka/bin/kafka-server-stop.sh
 User=kafka
