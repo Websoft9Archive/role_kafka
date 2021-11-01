@@ -28,3 +28,5 @@ kafka_meta:
      download_url: "https://archive.apache.org/dist/kafka/2.7.1/kafka_2.13-2.7.1.tgz"
   "2.8.0":
      download_url: "https://archive.apache.org/dist/kafka/2.8.0/kafka_2.13-2.8.0.tgz"
+  "3.0.0":
+     download_url: "https://archive.apache.org/dist/kafka/3.0.0/kafka_2.13-3.0.0.tgz"

@@ -68,10 +68,10 @@
 
 # display version of components
 - name: Get kafka version
-  shell: sudo echo `ls /opt/kafka/libs | grep kafka_ |head -1` |tee -a /data/logs/install_version.txt
+  shell: sudo echo "kafka version:" `/opt/kafka/bin/kafka-topics.sh --version | awk '{print $1}'` | sudo tee -a /data/logs/install_version.txt
 
 - name: Get zookeeper version
-  shell: sudo echo `ls /opt/kafka/bin/../libs |grep zookeeper- |head -1` |tee -a /data/logs/install_version.txt
+  shell: sudo grep "zookeeper" /opt/kafka/LICENSE | sudo sed 's/-/ version:/' | head -1 | sudo tee -a /data/logs/install_version.txt
 
 - name: Check kafka Service
   shell: systemctl status kafka | grep Active*

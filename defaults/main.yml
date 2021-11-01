@@ -1,2 +1,2 @@
-kafka_version: "2.7.0"
+kafka_version: "3.0.0"
 kafka_jmx_port: "9988"
